@@ -1,0 +1,111 @@
+/* Global styles
+---------------------------------------*/
+@font-face {
+    font-family: 'MainFont-normal';
+    src: url('/fonts/GenJyuuGothic-Normal.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'MainFont-heavy';
+    src: url('/fonts/GenJyuuGothic-Heavy.ttf'); /*URL to font*/
+}
+
+
+:root {
+    --font-color: #612A1B;
+}
+  
+
+html {
+    font-family: 'MainFont-normal';
+}
+
+
+
+/* Header
+---------------------------------------*/
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+.Header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+    margin: auto;
+}
+
+.Header-button {
+    background-image: url('/img/Button_Normal.png');
+    background-position: center;
+    background-size: contain;
+    width: 123px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'MainFont-heavy';
+    font-size: 28px;
+    color: var(--font-color);
+}
+.Header-button a {
+    text-decoration: none;
+}
+.Header-button a:visited {
+    color: var(--font-color);
+}
+.Header-button:hover {
+    background-image: url('/img/Button_Hover.png');
+}
+.Header-button:active {
+    background-image: url('/img/Button_Pressed.png');
+}
+
+.Header-logo {
+    height: 65px;
+    margin: 10px 30px;
+    padding-top: 10px;
+}
+
+.Header-divider {
+    width: 100%;
+    height: 7px;
+    background-color: var(--font-color);
+}
+
+.Header-links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+}
+
+.Header-links .Header-iconContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+}
+
+.Header-links .Header-linkIcons {
+    width: 35px;
+}
+
+
+
+/* Body
+---------------------------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.Body {
+    background-image: url('img/background.png');
+    background-repeat: repeat;
+    height: 100%;
+}
