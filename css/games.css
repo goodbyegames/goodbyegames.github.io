@@ -29,6 +29,12 @@
 }
 
 .Games-image {
-    height: 450px;
+    height: 430px;
     margin-top: 200px;
+}
+.Games-imageFrame {
+    width: 806px;
+    height: 472px;
+    margin-left: -830px;
+    margin-top: 180px;
 }
