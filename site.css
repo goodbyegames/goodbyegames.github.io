@@ -166,9 +166,11 @@ header {
     color: var(--font-color);
     margin: auto;
     margin-top: 70px;
+    cursor: pointer;
 }
 .About-contactButton a {
     text-decoration: none;
+    color: var(--font-color);
 }
 .About-contactButton a:visited {
     color: var(--font-color);
