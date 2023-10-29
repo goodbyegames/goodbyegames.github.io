@@ -69,6 +69,7 @@ header {
 }
 .Header-button a {
     text-decoration: none;
+    color: var(--font-color);
 }
 .Header-button a:visited {
     color: var(--font-color);
