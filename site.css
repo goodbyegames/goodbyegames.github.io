@@ -1,12 +1,16 @@
 /* Global styles
 ---------------------------------------*/
 @font-face {
-    font-family: 'MainFont-normal';
-    src: url('/fonts/GenJyuuGothic-Normal.ttf'); /*URL to font*/
+    font-family: 'MainFont-regular';
+    src: url('/fonts/GenJyuuGothic-Regular.ttf'); /*URL to font*/
 }
 @font-face {
     font-family: 'MainFont-heavy';
     src: url('/fonts/GenJyuuGothic-Heavy.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'MainFont-bold';
+    src: url('/fonts/GenJyuuGothic-Bold.ttf'); /*URL to font*/
 }
 
 
@@ -16,7 +20,17 @@
   
 
 html {
-    font-family: 'MainFont-normal';
+    font-family: 'MainFont-regular';
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/background.png');
+    background-repeat: repeat;
+    font-family: 'MainFont-regular';
+    color: var(--font-color);
 }
 
 
@@ -24,11 +38,10 @@ html {
 /* Header
 ---------------------------------------*/
 header {
-    display: flex;
-    flex-direction: column;
+    background-color: white;
 }
 
-header nav ul li {
+.Header-container nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 30px;
@@ -99,13 +112,80 @@ header nav ul li {
 
 /* Body
 ---------------------------------------*/
-html, body {
-    height: 100%;
-    margin: 0;
+.Body {
+    flex-grow: 1;
 }
 
-.Body {
-    background-image: url('img/background.png');
-    background-repeat: repeat;
-    height: 100%;
+.About-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1050px;
+    margin: auto;
+}
+
+.About-description {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    height: 250px;
+    margin-top: 90px;
+}
+
+.About-logo {
+    width: 189px;
+    margin: auto;
+}
+
+.About-descriptionText {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 25px;
+    text-align: justify;
+    font-family: 'MainFont-bold';
+    color: var(--font-color);
+}
+
+.About-image {
+    height: 320px;
+    margin-top: 70px;
+}
+
+.About-contactButton {
+    background-image: url('/img/LongButton_Normal.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'MainFont-heavy';
+    font-size: 28px;
+    color: var(--font-color);
+    margin: auto;
+    margin-top: 70px;
+}
+.About-contactButton a {
+    text-decoration: none;
+}
+.About-contactButton a:visited {
+    color: var(--font-color);
+}
+.About-contactButton:hover {
+    background-image: url('/img/LongButton_Hover.png');
+}
+.About-contactButton:active {
+    background-image: url('/img/LongButton_Pressed.png');
+}
+
+
+
+/* Footer
+---------------------------------------*/
+footer {
+    height: 20px;
+    flex-shrink: 0;
+    margin: auto;
 }
