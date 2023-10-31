@@ -38,7 +38,7 @@ html, body {
 /* Header
 ---------------------------------------*/
 header {
-    background-color: white;
+    background-color: #FFF7E9;
 }
 
 .Header-container nav ul li {
@@ -77,8 +77,29 @@ header {
 .Header-button:hover {
     background-image: url('/img/Button_Hover.png');
 }
-.Header-button:active {
+.Header-buttonActive a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+.Header-buttonActive a:visited {
+    color: var(--font-color);
+}
+.Header-buttonActive:hover {
+    background-image: url('/img/Button_Hover.png');
+}
+
+.Header-buttonActive {
     background-image: url('/img/Button_Pressed.png');
+    background-position: center;
+    background-size: contain;
+    width: 123px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'MainFont-heavy';
+    font-size: 28px;
+    color: var(--font-color);
 }
 
 .Header-logo {
@@ -90,7 +111,7 @@ header {
 .Header-divider {
     width: 100%;
     height: 7px;
-    background-color: var(--font-color);
+    background-color: #612A1B;
 }
 
 .Header-links {

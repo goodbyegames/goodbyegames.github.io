@@ -1,7 +1,7 @@
 .Games-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 1350px;
     margin: auto;
 }
@@ -35,6 +35,78 @@
 .Games-imageFrame {
     width: 806px;
     height: 472px;
-    margin-left: -830px;
+    margin-left: -872px;
     margin-top: 180px;
+}
+
+
+.Games-screenshotsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1050px;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.Games-screenshot {
+    width: 100%;
+}
+
+.Games-screenshotFrameContainer {
+    width: 225px;
+}
+
+.Games-screenshotFrame {
+    width: 230px;
+    height: 135px;
+    left: -2px;
+    top: -135px;
+    position: relative;
+}
+
+.Games-trailer {
+    width: 1250px;
+    height: 700px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.Games-trailerFrame {
+    width: 1310px;
+    height: 769px;
+    left: -25px;
+    top: -742px;
+    position: relative;
+}
+
+.Games-steamButton {
+    background-image: url('/img/LongButton_Normal.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'MainFont-heavy';
+    font-size: 28px;
+    color: var(--font-color);
+    margin: auto;
+    margin-top: 250px;
+    cursor: pointer;
+}
+.Games-steamButton a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+.Games-steamButton a:visited {
+    color: var(--font-color);
+}
+.Games-steamButton:hover {
+    background-image: url('/img/LongButton_Hover.png');
+}
+.Games-steamButton:active {
+    background-image: url('/img/LongButton_Pressed.png');
 }
