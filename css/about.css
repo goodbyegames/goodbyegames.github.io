@@ -38,13 +38,13 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 250px;
+    width: 220px;
     height: 75px;
     line-height: 75px;
     text-align: center;
     text-decoration: none;
     font-family: 'MainFont-heavy';
-    font-size: 28px;
+    font-size: 24px;
     color: var(--font-color);
     margin: auto;
     margin-top: 70px;

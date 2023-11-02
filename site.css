@@ -44,7 +44,7 @@ header {
 .Header-container nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 30px;
+    margin: 10px 15px;
 }
 
 .Header-container {
@@ -64,7 +64,7 @@ header {
     text-align: center;
     text-decoration: none;
     font-family: 'MainFont-heavy';
-    font-size: 28px;
+    font-size: 24px;
     color: var(--font-color);
 }
 .Header-button a {
@@ -98,7 +98,7 @@ header {
     text-align: center;
     text-decoration: none;
     font-family: 'MainFont-heavy';
-    font-size: 28px;
+    font-size: 24px;
     color: var(--font-color);
 }
 

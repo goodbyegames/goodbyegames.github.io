@@ -4,6 +4,7 @@
     justify-content: space-between;
     width: 1350px;
     margin: auto;
+    margin-top: -50px;
 }
 
 .Games-description {
@@ -20,8 +21,8 @@
 }
 
 .Games-descriptionText {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
     margin-top: 25px;
     text-align: justify;
     font-family: 'MainFont-bold';
@@ -30,13 +31,13 @@
 
 .Games-image {
     height: 430px;
-    margin-top: 200px;
+    margin-top: 140px;
 }
 .Games-imageFrame {
     width: 806px;
     height: 472px;
-    margin-left: -872px;
-    margin-top: 180px;
+    margin-left: -874px;
+    margin-top: 120px;
 }
 
 
@@ -44,7 +45,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1050px;
+    width: 1350px;
     margin: auto;
     margin-top: 75px;
 }
@@ -54,29 +55,29 @@
 }
 
 .Games-screenshotFrameContainer {
-    width: 225px;
+    width: 246px;
 }
 
 .Games-screenshotFrame {
-    width: 230px;
-    height: 135px;
-    left: -2px;
-    top: -135px;
+    width: 275px;
+    height: 166px;
+    left: -13px;
+    top: -154px;
     position: relative;
 }
 
 .Games-trailer {
-    width: 1250px;
-    height: 700px;
+    width: 1320px;
+    height: 750px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: -30px;
 }
 
 .Games-trailerFrame {
-    width: 1310px;
+    width: 1350px;
     height: 769px;
-    left: -25px;
-    top: -742px;
+    left: -15px;
+    top: -770px;
     position: relative;
 }
 
@@ -94,7 +95,7 @@
     font-size: 28px;
     color: var(--font-color);
     margin: auto;
-    margin-top: 250px;
+    margin-top: 150px;
     cursor: pointer;
 }
 .Games-steamButton a {
@@ -109,4 +110,9 @@
 }
 .Games-steamButton:active {
     background-image: url('/img/LongButton_Pressed.png');
+}
+
+.Games-screenshotArrow {
+    height: 50px;
+    margin-top: 50px;
 }
