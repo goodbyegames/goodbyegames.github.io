@@ -13,28 +13,26 @@ var leftMostScreenshotId = 0;
 
 
 function scrollScreenshotsLeft() {
-    console.log('left');
-    if(leftMostScreenshotId == 0)
-        return;
-
     leftMostScreenshotId--;
+    if(leftMostScreenshotId < 0)
+        leftMostScreenshotId = screenshotImages.length - 1;
+
     updateScreenshots();
 }
 
 
 function scrollScreenshotsRight() {
-    console.log('right');
-    if(leftMostScreenshotId == screenshotImages.length - NUM_SCREENSHOTS_AT_A_TIME)
-        return;
-
     leftMostScreenshotId++;
+    if(leftMostScreenshotId >= screenshotImages.length - 1)
+        leftMostScreenshotId = 0;
+
     updateScreenshots();
 }
 
 
 function updateScreenshots() {
-    for(let i = 0; i <= screenshots.length; i++) {
-        screenshots[i].src = '/img/screenshots/' + screenshotImages[leftMostScreenshotId + i];
+    for(let i = 0; i < screenshots.length; i++) {
+        screenshots[i].src = '/img/screenshots/' + screenshotImages[(leftMostScreenshotId + i) % screenshotImages.length];
     }
 }
 
@@ -50,6 +48,4 @@ window.onload = function(e) {
         let screenshot = document.getElementById(`Games-screenshot${i}`);
         screenshots.push(screenshot);
     }
-
-    leftMostScreenshotId = 1;
 }

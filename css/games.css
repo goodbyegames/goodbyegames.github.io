@@ -23,10 +23,12 @@
 .Games-descriptionText {
     font-size: 16px;
     line-height: 24px;
-    margin-top: 25px;
     text-align: justify;
     font-family: 'MainFont-bold';
     color: var(--font-color);
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
 }
 
 .Games-image {
@@ -60,9 +62,9 @@
 
 .Games-screenshotFrame {
     width: 275px;
-    height: 166px;
+    height: 175px;
     left: -13px;
-    top: -154px;
+    top: -166px;
     position: relative;
 }
 
@@ -71,13 +73,15 @@
     height: 643px;
     margin: auto;
     margin-top: -30px;
+    position: relative;
+    z-index: 1;
 }
 
 .Games-trailerFrame {
-    width: 1180px;
-    height: 670px;
-    left: -15px;
-    top: -668px;
+    width: 1187px;
+    height: 685px;
+    left: -20px;
+    top: -672px;
     position: relative;
 }
 
@@ -115,4 +119,5 @@
 .Games-screenshotArrow {
     height: 50px;
     margin-top: 50px;
+    cursor: pointer;
 }
