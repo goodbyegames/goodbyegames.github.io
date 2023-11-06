@@ -67,17 +67,17 @@
 }
 
 .Games-trailer {
-    width: 1320px;
-    height: 750px;
+    width: 1143px;
+    height: 643px;
     margin: auto;
     margin-top: -30px;
 }
 
 .Games-trailerFrame {
-    width: 1350px;
-    height: 769px;
+    width: 1180px;
+    height: 670px;
     left: -15px;
-    top: -770px;
+    top: -668px;
     position: relative;
 }
 
